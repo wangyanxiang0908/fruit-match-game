@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>果然消消 · 把烦恼一起消掉</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="ambient a"></div><div class="ambient b"></div><main>
+<header><a class="brand" href="./">✳ FRUIT CLUB</a><button id="sound" class="pill" aria-label="开启音效">音效 关</button></header>
+<section class="intro"><span class="eyebrow">给大脑放个小假 / A LITTLE FRUIT BREAK</span><h1>果然<span>消消</span><i>✳</i></h1><p>三个凑一起，把烦恼一起消掉。</p></section>
+<section class="game" aria-label="水果三消游戏"><div class="game-top"><span class="level" id="level">01 / 热身果园</span><button id="restart" class="text-btn">↻ 重新开始</button></div>
+<div class="stats"><div><small>本局得分</small><strong id="score">000</strong></div><div><small>剩余水果</small><strong id="left">18</strong></div><div><small>最好成绩</small><strong id="best">000</strong></div></div>
+<div class="progress"><div id="progress"></div></div><div class="board-wrap"><div class="sprout">✳</div><div id="board" class="board"></div><div class="board-note" id="note">点选水果 · 三个相同即可消除</div></div>
+<div class="tray-head"><b>水果暂存篮</b><span id="tray-count">0 / 7</span></div><div id="tray" class="tray" aria-label="七格暂存篮"></div>
+<div class="tools"><button id="undo"><span>↶</span><b>撤回一步</b><small id="undo-count">本局 1 次</small></button><button id="shuffle"><span>⤨</span><b>重新洗牌</b><small id="shuffle-count">本局 1 次</small></button><button id="hint"><span>☼</span><b>给点灵感</b><small>寻找可消组合</small></button></div>
+<p class="tip">小诀窍：先看暂存篮，再找相同的水果。</p></section>
+<footer><span>轻轻一点，快乐多一点。</span><b>原创界面 · AI 辅助开发原型</b></footer>
+</main><div id="toast" role="status"></div><div id="modal" class="overlay" hidden><div class="dialog"><span id="result-icon">✳</span><small id="result-tag">NICE PICK!</small><h2 id="result-title">果然有两下子</h2><p id="result-copy"></p><button id="next" class="primary">挑战下一关 →</button><button id="again" class="secondary">再来一次</button></div></div><script src="game.js"></script></body></html>
